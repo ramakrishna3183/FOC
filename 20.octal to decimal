@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+	long int octal,decimal=0;
+	int i = 0;
+	printf("enter an octal number:");
+	scanf("%d", &octal);
+	while(octal !=0)
+	{
+		decimal= decimal +(octal % 10)*(8, i++);
+		octal=octal/10;
+	}
+	printf("the decimal values is: %ld",decimal);
+	return 0;
+}
